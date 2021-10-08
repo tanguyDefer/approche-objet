@@ -7,10 +7,24 @@ public class Personne {
     private String prenom;
     private AdressePostale adressePostale;
 
+    public Personne(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
     public Personne(String nom, String prenom, AdressePostale adressePostale) {
         this.nom = nom;
         this.prenom = prenom;
         this.adressePostale = adressePostale;
+    }
+
+    public Personne() {
+
+    }
+
+    public void displayPrenomWithUppercaseName(String nom, String prenom) {
+        this.nom = nom.toUpperCase();
+        this.prenom = prenom;
     }
 
     public String getNom() {
