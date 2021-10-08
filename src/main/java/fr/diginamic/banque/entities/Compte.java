@@ -1,10 +1,23 @@
 package fr.diginamic.banque.entities;
 
 public class Compte {
-    private final String numeroCompte;
-    private final float soldeCompte;
+    private  String numeroCompte;
+    private  float soldeCompte;
+
+    public void setSoldeCompte(float soldeCompte) {
+        this.soldeCompte = soldeCompte;
+    }
+
+    public String getNumeroCompte() {
+        return numeroCompte;
+    }
+
+    public float getSoldeCompte() {
+        return soldeCompte;
+    }
 
     public Compte(String numeroCompte, float soldeCompte) {
+        super();
         this.numeroCompte = numeroCompte;
         this.soldeCompte = soldeCompte;
     }
